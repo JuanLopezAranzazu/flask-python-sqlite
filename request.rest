@@ -1,0 +1,42 @@
+@api = http://localhost:5000
+
+### USERS
+
+GET {{api}}/users
+
+###
+
+GET {{api}}/users/1
+
+###
+
+GET {{api}}/users_filter/test
+
+###
+
+POST {{api}}/users
+Content-Type: application/json
+
+{
+  "firstname": "test",
+  "lastname": "test",
+  "email": "test"
+}
+
+### MESSAGES
+
+GET {{api}}/messages
+
+###
+
+GET {{api}}/messages/1
+
+###
+
+POST {{api}}/messages
+Content-Type: application/json
+
+{
+  "text": "test2",
+  "user_id": 1
+}
